@@ -12,8 +12,8 @@ single_tuple = (42,)  # Without comma, it's just parentheses around a value
 not_a_tuple = (42)    # This is just an integer
 
 # Tuple from list
-my_list = [1, 2, 3, 4]
-my_tuple = tuple(my_list)
+my_list = [1, 2, 3, 4] #วงเล็บ[]list
+my_tuple = tuple(my_list) #บรรทัดนี้แปลงlistแล้ว
 
 # Tuple from string
 char_tuple = tuple("hello")  # ('h', 'e', 'l', 'l', 'o')
