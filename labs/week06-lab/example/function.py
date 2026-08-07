@@ -7,7 +7,7 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
-# Example 1: Simple function without parameters
+# Example 1: Simple function without parameters(คือข้อมูลย่อยของฟังชั่นคนอยากใช้ใช้ได้เลยไม่ต้องสั่งฟังชั่น)
 def say_hello():
     """A simple function that prints a greeting"""
     print("Hello, World!")
@@ -21,7 +21,7 @@ print()
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
-    print("-" * 40)
+    print("-" * 40) #print40รอบ
 
 draw_separator()
 print("This is between separators")
@@ -33,19 +33,19 @@ print()
 # =============================================================================
 print("\n=== PART 2: FUNCTIONS WITH PARAMETERS ===")
 
-# Example 1: Function with one parameter
-def greet_person(name):
+# Example 1: Function with one parameter(parameter inputของโปรแกรมย่อย)
+def greet_person(name):#printไม่เกิน1ตัวถ้ามากกว่า1ตัวจะมีปัญหา
     """Greets a person by name"""
     print(f"Hello, {name}! Nice to meet you.")
 
-print("Calling greet_person with different names:")
-greet_person("Alice")
+print("Calling greet_person with different names:")#สนใจแค่หัวฟังชั่น
+greet_person("Alice")#บรรทัดที่42ถึง44คือตัวอย่างของการใช้ฟังชั่น''''และเป็นสติง
 greet_person("Bob")
 greet_person("Charlie")
 print()
 
 # Example 2: Function with multiple parameters
-def introduce_person(name, age, city):
+def introduce_person(name, age, city):#ตัวอย่างcodeของการใช้ฟังชั่น3ตัว
     """Introduces a person with their details"""
     print(f"Hi! My name is {name}.")
     print(f"I am {age} years old.")
@@ -65,7 +65,7 @@ def calculate_rectangle_area(length, width):
     print()
 
 print("Calculating rectangle areas:")
-calculate_rectangle_area(5, 3)
+calculate_rectangle_area(5, 3)#บรรทัด68ถึง69เป็นการเรียกใช้ตั้งแต่ชื่อผู้และวนกลับเข้าฟังชั่นจนจบ
 calculate_rectangle_area(10, 7)
 
 # =============================================================================
@@ -88,16 +88,17 @@ print(f"Sum of both results: {sum1 + sum2}")
 print()
 
 # Example 2: Function returning multiple values
-def get_circle_info(radius):
+def get_circle_info(radius):#ตัวอย่างการเขียนโปรแกรมค่ากลับแต่2เรื่อง
     """Calculates circle area and circumference"""
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
-    return area, circumference
+    volumn = 4.0 / 3 * pi * radius**3
+    return area, circumference, volumn
 
-print("Circle calculations:")
+print("Circle calculations:")#แต่บรรทัดนี้ถึงบรรทัด104คือตัวแปลนอกฟังชั่น
 radius = 5
-area, circumference = get_circle_info(radius)
+area, circumference, volumn = get_circle_info(radius)
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
@@ -112,9 +113,15 @@ def square(n):
     """Returns the square of a number"""
     return n * n
 
+def square_root(n):
+    """Returns the square of a number"""
+    return n ** 0.5
+
 print("Using return values in expressions:")
-result = multiply(4, 5) + square(3)
+result = multiply(4, 5) + square(3)#3ยกกําลังอยู่
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
+
+print(f"square root of =", square_root(25))
 print()
 
 # =============================================================================

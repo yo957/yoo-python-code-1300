@@ -1,0 +1,11 @@
+# Example 3: Mathematical function
+def calculate_cicle_area(radius):
+    """Calculates and displays cicle area"""
+    area = 3.14*radius**2
+    print(f"cicle with radius {radius}")
+    print(f"Area = {radius}  = {area}")
+    print()
+
+print("Calculating cicle areas:")
+calculate_cicle_area(5)
+calculate_cicle_area(10)

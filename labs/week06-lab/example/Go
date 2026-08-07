@@ -1,0 +1,11 @@
+# Example 3: Mathematical function
+def calculate_triangle_area(height, bace):
+    """Calculates and displays triangle area"""
+    area = 1.0/2 * height * bace
+    print(f"triangle with height {height} and width {bace}")
+    print(f"Area = {height} × {bace} = {area}")
+    print()
+
+print("Calculating triangle areas:")
+calculate_triangle_area(5, 3)
+calculate_triangle_area(10, 7)
