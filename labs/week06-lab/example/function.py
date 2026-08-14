@@ -76,7 +76,7 @@ print("\n=== PART 3: FUNCTIONS WITH RETURN VALUES ===")
 # Example 1: Function that returns a value
 def add_numbers(a, b):
     """Adds two numbers and returns the result"""
-    result = a + b
+    result = a + b#แค่วนมา+ไม่ได้แสดงขึ้นจอ
     return result
 
 print("Using functions that return values:")
@@ -116,7 +116,7 @@ def square(n):
 def square_root(n):
     """Returns the square of a number"""
     return n ** 0.5
-
+#ส่งค่าของตัวแปรกลับไป
 print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)#3ยกกําลังอยู่
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
@@ -137,7 +137,7 @@ def greet_with_title(name, title="Mr./Ms."):
 print("Using default parameters:")
 greet_with_title("Smith")  # Uses default title
 greet_with_title("Johnson", "Dr.")  # Custom title
-greet_with_title("Brown", "Prof.")  # Custom title
+greet_with_title("Brown", "Prot.")  # Custom title
 print()
 
 # Example 2: Multiple default parameters
