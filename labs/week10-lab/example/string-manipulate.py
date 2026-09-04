@@ -5,11 +5,12 @@
 # 1. STRING CREATION AND BASIC OPERATIONS
 # ===========================
 
-print("=== STRING CREATION ===")
+print("=== STRING CREATION ===")#ตัวอย่างของการประกาศตัวแปล ใช้เครื่องหมาย" ' และ"""ได้
 # Different ways to create strings
 name = "India"
 graduate = 'B.E.'
-multiline = """This is a
+#""" แปลว่าขึ้นบรรทัดใหม่ได้
+multiline = """This is a 
 multiline string
 example"""
 
@@ -28,7 +29,7 @@ print(f"Hello {name}")
 
 # Converting string to number
 apple = input("Enter a number: ")
-try:
+try: #tryคําสั่งที่มีไว้เผื่อเกิดข้อผิดพลาดจากUser มันจะเตือนผ่านหน้าจอว่าพิมพ์คําตอบผิด
     x = int(apple) - 10
     print(f"Result: {x}")
 except ValueError:
@@ -40,18 +41,18 @@ except ValueError:
 
 print("\n=== STRING INDEXING ===")
 fruit = 'banana'
-print(f"fruit = {fruit}")
-print(f"fruit[1] = {fruit[1]}")  # 'a'
+print(f"fruit = {fruit}")#อินเด็คเบอร์1
+print(f"fruit[1] = {fruit[1]}")  # 'a' มันจะprint fruit a
 
 n = 3
-w = fruit[n - 1]  # fruit[2]
+w = fruit[n - 1]  # fruit[2] อินเด็คเบอร์2
 print(f"n = {n}")
 print(f"w = fruit[n-1] = {w}")  # 'n'
 
 # Show indexing diagram
 print("\nIndexing visualization:")
 print("b a n a n a")
-print("0 1 2 3 4 5")
+print("0 1 2 3 4 5") #มากสุดของIndexingคือ-6 มากสุดคือ5
 print("-6-5-4-3-2-1")
 
 # ===========================
@@ -59,7 +60,7 @@ print("-6-5-4-3-2-1")
 # ===========================
 
 print("\n=== TRAVERSING STRINGS ===")
-message = "hello"
+message = "hello"#printข้อความออกมาทีละตัว message[h] printออกมาทีละตัวตามhelloและขึ้นบรรทัดใหม่
 index = 0
 
 print("Method 1: Using for loop with enumerate")
@@ -82,10 +83,10 @@ str2 = 'World!'
 
 # Concatenation
 result = str1 + str2
-print(f"str1 + str2 = {result}")
+print(f"str1 + str2 = {result}") #การคูณตัวอักษร
 
 # Multiplication
-repeat = str1 * 3
+repeat = str1 * 3 #ถ้าเป็นทศนิยมcodeจะError การคูณกับตัวอักษรคือการพิมพ์ซํ้า
 print(f"str1 * 3 = {repeat}")
 
 # ===========================
@@ -94,7 +95,7 @@ print(f"str1 * 3 = {repeat}")
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
-name = input("Enter your name: ")
+name = input("Enter your name: ") #การprint hello พร้อมกับชื่อและ. welcome to pune
 greeting += name
 greeting += ". welcome to pune"
 print(greeting)
@@ -115,7 +116,7 @@ print(f"{count} letters 'l' found in '{text}'")
 # 8. MEMBERSHIP TEST
 # ===========================
 
-print("\n=== MEMBERSHIP TEST ===")
+print("\n=== MEMBERSHIP TEST ===") #inกับnot in ไว้ตรวจสอบว่ามีข้อความนี้มั้ย
 print("'a' in 'program':", 'a' in 'program')  # True
 print("'at' not in 'battle':", 'at' not in 'battle')  # False
 
@@ -123,10 +124,10 @@ print("'at' not in 'battle':", 'at' not in 'battle')  # False
 # 9. STRING IMMUTABILITY 
 # ===========================
 
-print("\n=== STRING IMMUTABILITY ===")
+print("\n=== STRING IMMUTABILITY ===")#การเขียนโปรแกรมสร้างวัตถุ
 str1 = "Hello"
 print(f"str1 is {str1}")
-print(f"id of str1 is {id(str1)}")
+print(f"id of str1 is {id(str1)}") #idไว้หาเรฟเฟอร์เร็นของตัวแปล
 
 str2 = "world"
 print(f"str2 is {str2}")
@@ -146,16 +147,16 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
-print("Line 1\nLine 2")
+print("Line 1\nLine 2")#line2ขึ้นบรรทัดใหม่
 
 print("Tab example:")
-print("Column1\tColumn2\tColumn3")
+print("Column1\tColumn2\tColumn3")#tab1 tab
 
 print("Backslash example:")
-print("Path: C:\\Users\\Python")
+print("Path: C:\\Users\\Python")#\ขึ้นตัวเดียว
 
 print("Quote examples:")
-print('He said, "What\'s there?"')
+print('He said, "What\'s there?"')#ใช้"""ให้พอดีกับprintเพื่อไม่ให้โค้ดError
 print("He said, \"What's there?\"")
 print('''He said, "What's there?"''')
 
@@ -174,7 +175,7 @@ print("\n=== STRING FORMATTING ===")
 name = "ashish"
 age = 8
 print("Using %% formatting:")
-print("name=%s and age=%d" % (name, age))
+print("name=%s and age=%d" % (name, age))#คล้าย%f%d
 print("name=%s and age=%d" % ("ankita", 6))
 
 # .format() method
@@ -184,7 +185,7 @@ name = 'shankar'
 sal = 20000
 
 # Different format styles
-str1 = '{},{},{}'.format(id_num, name, sal)
+str1 = '{},{},{}'.format(id_num, name, sal)#code print ทีละบรรทัดทีละข้อความ
 print(str1)  # 10,shankar,20000
 
 str2 = '{} - {} - {}'.format(id_num, name, sal)
@@ -202,10 +203,10 @@ text = "welcome to the world of python"
 
 # Case methods
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Upper: {text.upper()}")#พ่นออกมาเป็นพิมพ์ใหญ่
+print(f"Lower: {text.lower()}")#พ่นออกมาเป็นพิมพ์เล็ก
+print(f"Title: {text.title()}")#พ่นออกมาเป็นตัวใหญ่แค่ตัวหน้าในแต่ละคํา
+print(f"Capitalize: {text.capitalize()}")#พ่นออกมาเป็นตัวใหญ่แค่ตัวหน้า
 
 # Search methods
 print(f"Find 'world': {text.find('world')}")
@@ -214,17 +215,17 @@ print(f"Starts with 'welcome': {text.startswith('welcome')}")
 print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")#Replaceข้อความที่เรียกว่าpythanด้วยjava
 words = text.split()
 print(f"Split into words: {words}")
-print(f"Join with '-': {'-'.join(words)}")
+print(f"Join with '-': {'-'.join(words)}") #แทนที่ข้อความแล้วพ่นออกมาwelcome-to-the-world-of-python
 
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
+print(f"isalnum(): {test_str.isalnum()}")#เช็คตัวเลข
+print(f"isalpha(): {test_str.isalpha()}")#เช็คตัวอักษร
+print(f"isdigit(): {test_str.isdigit()}")#ทุกตัวเป็นตัวเลขมั้ย
 print(f"isupper(): {test_str.isupper()}")
 print(f"islower(): {test_str.islower()}")
 
