@@ -1,4 +1,4 @@
-"""
+
 BMI Calculator (20 points)
 
 Write a program that:
@@ -62,4 +62,3 @@ elif choice == "2":
     usd = float(input("Enter amount in USD: "))
     thb = usd * rate
     print(f"Formula: {usd:.2f} * {rate} = {thb:.2f}")
-
