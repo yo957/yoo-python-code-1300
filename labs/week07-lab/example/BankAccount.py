@@ -1,14 +1,15 @@
+#แนวทางในการแก้ปัญหา
 class BankAccount:
     """A simple bank account class"""
     
-    def __init__(self, account_holder, initial_balance=0):
-        self.account_holder = account_holder
+    def __init__(self, account_holder, initial_balance=0):#ถ้าไม่ส่งข้อมูลนี้ไม่สามารถทํารายการได้
+        self.account_holder = account_holder#ธนาคารไม่จําเป็นต้องมีแค่โจทย์ๆนี้
         self.balance = initial_balance
         self.transaction_history = []
     
     def deposit(self, amount):
         """Method to deposit money"""
-        if amount > 0:
+        if amount > 0:#ตรวจสอบการฝากข้อมูลนําเข้า
             self.balance += amount
             self.transaction_history.append(f"Deposited: ${amount}")
             return f"Deposited ${amount}. New balance: ${self.balance}"
@@ -17,7 +18,7 @@ class BankAccount:
     
     def withdraw(self, amount):
         """Method to withdraw money"""
-        if amount > 0 and amount <= self.balance:
+        if amount > 0 and amount <= self.balance:#ถอนเงินติดลบไม่ได้หรือน้อยกว่าจํานวนที่ฝากไม่ได้
             self.balance -= amount
             self.transaction_history.append(f"Withdrew: ${amount}")
             return f"Withdrew ${amount}. New balance: ${self.balance}"
