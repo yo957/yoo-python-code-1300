@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Parent class (Base class)ตัวอย่างของคลาสพ่อแม่
+=======
+# Parent class (Base class)
+>>>>>>> upstream/main
 class Animal:
     
     def __init__(self, name, species):
@@ -16,8 +20,13 @@ class Animal:
         print(f"{self.name} makes a sound")
 
 # Child class (Derived class)
+<<<<<<< HEAD
 class Dog(Animal):#การถ่ายถอดมาจากแม่มี3อย่างของแม่
     def __init__(self, name, breed): #มีข้อมูล3ตัวในการทําการ
+=======
+class Dog(Animal):
+    def __init__(self, name, breed):
+>>>>>>> upstream/main
         super().__init__(name, "Canine")  # Call parent constructor
         self.breed = breed
     
@@ -29,7 +38,11 @@ class Dog(Animal):#การถ่ายถอดมาจากแม่มี3
     def fetch(self):
         print(f"{self.name} is fetching the ball")
 
+<<<<<<< HEAD
 class Cat(Animal): #ก็อป7อย่างมาที่ตัวเอง
+=======
+class Cat(Animal):
+>>>>>>> upstream/main
     
     def __init__(self, name, color):
         super().__init__(name, "Feline")

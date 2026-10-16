@@ -2,8 +2,13 @@ class BankAccount:
     
     def __init__(self, account_number, initial_balance=0):
         self.account_number = account_number
+<<<<<<< HEAD
         self.__balance = initial_balance  # Private attribute เป็นข้อมูลส่วนบุคคล
         self.__transaction_history = []   # Private attribute เป็นข้อมูลส่วนบุคคล
+=======
+        self.__balance = initial_balance  # Private attribute
+        self.__transaction_history = []   # Private attribute
+>>>>>>> upstream/main
     
     # Public method to access private balance
     def get_balance(self):
@@ -30,7 +35,11 @@ class BankAccount:
     def transaction_history(self):
         return self.__transaction_history.copy()
     
+<<<<<<< HEAD
     def __str__(self): #Method ture ตริง
+=======
+    def __str__(self):
+>>>>>>> upstream/main
         return f"Account {self.account_number}: Balance ${self.__balance}"
 
 # Usage example

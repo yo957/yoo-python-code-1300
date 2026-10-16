@@ -7,7 +7,11 @@
 # =============================================================================
 print("=== PART 1: BASIC FUNCTIONS ===")
 
+<<<<<<< HEAD
 # Example 1: Simple function without parameters(คือข้อมูลย่อยของฟังชั่นคนอยากใช้ใช้ได้เลยไม่ต้องสั่งฟังชั่น)
+=======
+# Example 1: Simple function without parameters
+>>>>>>> upstream/main
 def say_hello():
     """A simple function that prints a greeting"""
     print("Hello, World!")
@@ -21,7 +25,11 @@ print()
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
+<<<<<<< HEAD
     print("-" * 40) #print40รอบ
+=======
+    print("-" * 40)
+>>>>>>> upstream/main
 
 draw_separator()
 print("This is between separators")
@@ -33,6 +41,7 @@ print()
 # =============================================================================
 print("\n=== PART 2: FUNCTIONS WITH PARAMETERS ===")
 
+<<<<<<< HEAD
 # Example 1: Function with one parameter(parameter inputของโปรแกรมย่อย)
 def greet_person(name):#printไม่เกิน1ตัวถ้ามากกว่า1ตัวจะมีปัญหา
     """Greets a person by name"""
@@ -40,12 +49,25 @@ def greet_person(name):#printไม่เกิน1ตัวถ้ามาก�
 
 print("Calling greet_person with different names:")#สนใจแค่หัวฟังชั่น
 greet_person("Alice")#บรรทัดที่42ถึง44คือตัวอย่างของการใช้ฟังชั่น''''และเป็นสติง
+=======
+# Example 1: Function with one parameter
+def greet_person(name):
+    """Greets a person by name"""
+    print(f"Hello, {name}! Nice to meet you.")
+
+print("Calling greet_person with different names:")
+greet_person("Alice")
+>>>>>>> upstream/main
 greet_person("Bob")
 greet_person("Charlie")
 print()
 
 # Example 2: Function with multiple parameters
+<<<<<<< HEAD
 def introduce_person(name, age, city):#ตัวอย่างcodeของการใช้ฟังชั่น3ตัว
+=======
+def introduce_person(name, age, city):
+>>>>>>> upstream/main
     """Introduces a person with their details"""
     print(f"Hi! My name is {name}.")
     print(f"I am {age} years old.")
@@ -65,7 +87,11 @@ def calculate_rectangle_area(length, width):
     print()
 
 print("Calculating rectangle areas:")
+<<<<<<< HEAD
 calculate_rectangle_area(5, 3)#บรรทัด68ถึง69เป็นการเรียกใช้ตั้งแต่ชื่อผู้และวนกลับเข้าฟังชั่นจนจบ
+=======
+calculate_rectangle_area(5, 3)
+>>>>>>> upstream/main
 calculate_rectangle_area(10, 7)
 
 # =============================================================================
@@ -76,7 +102,11 @@ print("\n=== PART 3: FUNCTIONS WITH RETURN VALUES ===")
 # Example 1: Function that returns a value
 def add_numbers(a, b):
     """Adds two numbers and returns the result"""
+<<<<<<< HEAD
     result = a + b#แค่วนมา+ไม่ได้แสดงขึ้นจอ
+=======
+    result = a + b
+>>>>>>> upstream/main
     return result
 
 print("Using functions that return values:")
@@ -88,17 +118,29 @@ print(f"Sum of both results: {sum1 + sum2}")
 print()
 
 # Example 2: Function returning multiple values
+<<<<<<< HEAD
 def get_circle_info(radius):#ตัวอย่างการเขียนโปรแกรมค่ากลับแต่2เรื่อง
+=======
+def get_circle_info(radius):
+>>>>>>> upstream/main
     """Calculates circle area and circumference"""
     pi = 3.14159
     area = pi * radius * radius
     circumference = 2 * pi * radius
+<<<<<<< HEAD
     volumn = 4.0 / 3 * pi * radius**3
     return area, circumference, volumn
 
 print("Circle calculations:")#แต่บรรทัดนี้ถึงบรรทัด104คือตัวแปลนอกฟังชั่น
 radius = 5
 area, circumference, volumn = get_circle_info(radius)
+=======
+    return area, circumference
+
+print("Circle calculations:")
+radius = 5
+area, circumference = get_circle_info(radius)
+>>>>>>> upstream/main
 print(f"Circle with radius {radius}:")
 print(f"Area: {area:.2f}")
 print(f"Circumference: {circumference:.2f}")
@@ -113,6 +155,7 @@ def square(n):
     """Returns the square of a number"""
     return n * n
 
+<<<<<<< HEAD
 def square_root(n):
     """Returns the square of a number"""
     return n ** 0.5
@@ -122,6 +165,11 @@ result = multiply(4, 5) + square(3)#3ยกกําลังอยู่
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 
 print(f"square root of =", square_root(25))
+=======
+print("Using return values in expressions:")
+result = multiply(4, 5) + square(3)
+print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
+>>>>>>> upstream/main
 print()
 
 # =============================================================================
@@ -137,7 +185,11 @@ def greet_with_title(name, title="Mr./Ms."):
 print("Using default parameters:")
 greet_with_title("Smith")  # Uses default title
 greet_with_title("Johnson", "Dr.")  # Custom title
+<<<<<<< HEAD
 greet_with_title("Brown", "Prot.")  # Custom title
+=======
+greet_with_title("Brown", "Prof.")  # Custom title
+>>>>>>> upstream/main
 print()
 
 # Example 2: Multiple default parameters

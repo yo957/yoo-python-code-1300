@@ -27,12 +27,21 @@ class Student:
 student1 = Student("Alice", 20, "S001")
 student2 = Student("Bob", 19, "S002")
 
+<<<<<<< HEAD
 # Using methods การใช้งานคลาส
+=======
+# Using methods
+>>>>>>> upstream/main
 print(student1.introduce())
 print(student1.add_course("Python Programming"))
 print(student1.add_course("Data Structures"))
 print(student1.show_courses())
 
 print(student2.introduce())
+<<<<<<< HEAD
 print(student1.add_course("Math and Stat"))
 print(student1.show_courses())
+=======
+print(student2.add_course("Math and Stat"))
+print(student2.show_courses())
+>>>>>>> upstream/main

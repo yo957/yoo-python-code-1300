@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+"""
+>>>>>>> upstream/main
 BMI Calculator (20 points)
 
 Write a program that:
@@ -18,6 +22,7 @@ Below 18.5: Underweight
 
 """
 
+<<<<<<< HEAD
 weight = float(input("Enter weight: "))
 height = float(input("Enter height: "))
 
@@ -32,6 +37,8 @@ elif bmi > 25.0 and bmi <= 29.9:
 elif bmi <= 30.0:
     print("Obese")
 
+=======
+>>>>>>> upstream/main
 
 """
 Question 2: Currency Converter (20 points)
@@ -44,6 +51,7 @@ Ask for the amount to convert
 Use exchange rate: 1 USD = 35.5 THB
 Display result with 2 decimal places
 Show the calculation formula used
+<<<<<<< HEAD
 """
 rate = 35.5
 
@@ -62,3 +70,6 @@ elif choice == "2":
     usd = float(input("Enter amount in USD: "))
     thb = usd * rate
     print(f"Formula: {usd:.2f} * {rate} = {thb:.2f}")
+=======
+"""
+>>>>>>> upstream/main
